@@ -1,0 +1,12 @@
+<section *ngIf="lineChartData && lineChartLabels" class="statistic-page">
+    <h2>The total USD value of trading volume on major bitcoin exchanges at {{month}}</h2>
+    <canvas baseChart class="line-chart"
+    [datasets]="lineChartData"
+    [labels]="lineChartLabels"
+    [options]="lineChartOptions"
+    [colors]="lineChartColors"
+    [legend]="true"
+    [chartType]="'line'"
+    [plugins]="[]">
+  </canvas>
+</section>

@@ -1,0 +1,71 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    min-height: 50px;
+    padding: 0 10px;
+
+    nav {
+        display: flex;
+        .nav-item {
+            margin-left: 55px;
+            cursor: pointer;
+            user-select: none;
+            outline: 0;
+            border: 0;
+        }
+        @media (max-width: 750px) {
+            padding: 2px 0;
+            flex-direction: column;
+            background-color: lightgray;
+            color: black;
+            position: fixed;
+            top: 43px;
+            right: 15px;
+            right: -100%;
+            border-radius: 3px;
+            align-items: stretch;
+            text-align: center;
+            min-width: 180px;
+            transition: right 0.4s ease-out;
+            box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+            .nav-item {
+                margin-left: 0;
+                width: 100%;
+                padding: 10px 3px;
+                transition: .3s;
+                &:hover {
+                    background-color: whitesmoke;
+                }
+                >:first-child {
+                    background-color: brown;
+                }
+            }
+        }
+    }
+
+    nav.open {
+        @media (max-width: 750px) {
+            right: 10px;
+        }
+    }
+
+    .hamburger {
+        height: 40px;
+        width: 40px;
+        color: white;
+        font-size: 27px;
+        display: none;
+
+        @media (max-width: 750px) {
+        display: inline-block;
+        }
+    }
+
+    .router-link-active {
+        color: green;
+        font-weight: 600;
+    }
+}

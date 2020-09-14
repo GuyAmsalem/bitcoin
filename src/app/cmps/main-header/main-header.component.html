@@ -1,0 +1,13 @@
+<section class="main-header">
+    <a class="link-wrapper" routerLink="/">
+        <div class="logo">MisterBITcoin</div>
+    </a>
+    <button (click)="openMenu()" class="reset-btn hamburger center-flex">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav #menu>
+            <div (click)="closeMenu()" [routerLink]="['/']" class="nav-item">Home</div>
+            <div (click)="closeMenu()" [routerLink]="['/contacts']" routerLinkActive="router-link-active" class="nav-item">Contacts</div>
+            <div (click)="closeMenu()" [routerLink]="['/statistics']" routerLinkActive="router-link-active" class="nav-item">Statistic</div>
+    </nav>
+</section>

@@ -1,0 +1,23 @@
+<section class="contact-edit" *ngIf="contact">
+    <img class="contact-icon" src="../../../assets/img/contact.png" alt="Contact icon">
+    <form (submit)="onSave($event)">
+        <div class="form-line">
+            <label>Name:</label>
+            <input #nameInput class="reg-input edit" type="text" [(ngModel)]="contact.name" name="name" [placeholder]="contact.name">
+        </div>
+        <div class="form-line">
+            <label>Phone:</label>
+            <input class="reg-input edit" type="text" [(ngModel)]="contact.phone" name="phone" [placeholder]="contact.phone">
+        </div>
+        <div class="form-line">
+            <label>Email:</label>
+            <input class="reg-input edit" type="email" [(ngModel)]="contact.email" name="email" [placeholder]="contact.email">
+        </div>
+        <button class="regular-btn">Save</button>
+    </form>
+       
+    <a class="regular-btn link-wrapper back-btn" routerLink="/contacts">
+        Back
+    </a>
+    <button (click)="onRemove()" class="regular-btn remove-btn">Remove</button>
+</section>

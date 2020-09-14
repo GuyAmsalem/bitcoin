@@ -1,0 +1,7 @@
+<section class="contacts-page">
+    <contact-filter (onFilter)="filterContacts($event)"></contact-filter>
+    <contact-list *ngIf="contacts" [contacts]="contacts"></contact-list>
+</section>
+<a class="link-wrapper" routerLink="/contacts/edit">
+    <button class="add-btn reset-btn center-flex">+</button>
+</a>

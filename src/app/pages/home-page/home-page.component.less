@@ -1,0 +1,29 @@
+.home-page {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    main {
+        text-align: center;
+
+        >* {
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        .coins {
+            border: 1px solid goldenrod;
+            margin-right: 5px;
+            display: inline-block;
+
+            @media screen and (max-width: 320px) {
+                margin: 0 5px 5px 0;
+            }
+        }
+
+        .btc {
+            border: 1px solid limegreen;
+            display: inline-block;
+        }
+    }
+}

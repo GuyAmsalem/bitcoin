@@ -1,0 +1,54 @@
+.contact-edit {
+    text-align: center;
+    .contact-icon {
+        max-width: 40%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    form {
+        width: 80%;
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        label {
+            width: 65px;
+            margin-bottom: 3px;
+        }
+        .form-line {
+            display: flex;
+            margin-bottom: 10px;
+            flex-direction: column;
+
+        }
+        .regular-btn {
+            align-self: flex-end;
+            margin-top: 20px;
+        }
+    }
+
+    .back-btn {
+        position: absolute;
+        top: 55px;
+        left: 15px;
+    }
+
+    .regular-btn.remove-btn {
+        position: absolute;
+        top: 55px;
+        left: 83px;
+        background-color: white;
+        font-size: 1rem;
+        font-family: inherit;
+        &:hover {
+            cursor: pointer;
+            background-color: lightsalmon;
+        }
+    }
+
+    input.edit {
+        flex: 1;
+    }
+}

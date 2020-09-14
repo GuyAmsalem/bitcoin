@@ -1,0 +1,14 @@
+<section class="contact-details">
+    <img class="contact-icon" src="../../../assets/img/contact.png" alt="Contact icon">
+    <main>
+        <div class="details-line">Name: {{contact.name}}</div>
+        <div class="details-line">Phone: {{contact.phone}}</div>
+        <div class="details-line">Email: {{contact.email}}</div>
+    </main>
+    <a class="regular-btn link-wrapper back" routerLink="/contacts">
+        Back
+    </a>
+    <a class="regular-btn link-wrapper" [routerLink]="'/contacts/edit/' + contact._id">
+        Edit
+    </a>
+</section>

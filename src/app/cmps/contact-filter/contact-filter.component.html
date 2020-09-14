@@ -1,0 +1,6 @@
+<section class="contact-filter">
+    <input type="text" class="reg-input"
+    [(ngModel)]="filterBy.term" 
+    placeholder="Search contact" 
+    (input)="onFilter.emit(filterBy)" />
+</section>
